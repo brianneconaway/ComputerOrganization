@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main() {
+	printf("unsigned char    %d\n", sizeOf(unsigned char));
+
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include "i2h.h"
+
+
+int main () {
+
+	unsigned int n;
+
+
+
+	while (sizeof(n) == sizeof(unsigned int)){
+		printf("Enter an int: \n");
+        	scanf("%u", &n);
+		printf("%u\n", n);
+		printf("Hi there");
+			continue;
+
+	}
+
+	char buff[8] = {'0', '0', '0', '0', '0', '0', '0', '\0'};
+	int2hex(n, buff);
+        printf("%s\n", buff);
+
+}
